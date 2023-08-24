@@ -547,19 +547,6 @@
     document.body.style.overflowY = "visible";
     };
 
-    /*$('.delete_feed_btn').on('click', function() {
-        var feedId = $(this).data('feed-id');
-        $.ajax({
-            url: 'delete/' + feedId + '/',
-            type: 'DELETE',
-            success: function() {
-                $('#feed-' + feedId).remove();
-            },
-            error: function() {
-                console.log("error")
-            }
-        });
-    });*/
 
     $('.delete_feed_btn').on('click', function() {
         var feedId = $(this).data('feed-id');
