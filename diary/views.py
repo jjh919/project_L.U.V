@@ -32,8 +32,7 @@ class Main(APIView):
     def get(self, request):
         feed_list = Feed.objects.all().order_by('-id')
         user_list = User.objects.all()
-        return render(request, 'ourdiary/main.html', 
-                      context={'feed_list': feed_list, 'user_list': user_list})
+        return render(request, 'ourdiary/main.html', context={'feed_list': feed_list, 'user_list': user_list})
     
 
 class UploadFeed(APIView):
